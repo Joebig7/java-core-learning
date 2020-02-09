@@ -1,12 +1,15 @@
-package generic.demo;
+package object_basis._01_Contructor;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @version 1.0
  * @author: JoeBig7
- * @date: 2019/10/14 12:06
+ * @date: 2020/2/9 11:40
  * @description
  */
-public class Customer {
+public class Person {
 
     private String name;
     private String address;
@@ -28,5 +31,11 @@ public class Customer {
     }
 
 
-    
+    List<? extends Number> list(String arg) throws Exception {
+        ArrayList<Number> list = new ArrayList<>();
+        list.add(1);
+        return list;
+    }
+
+
 }
