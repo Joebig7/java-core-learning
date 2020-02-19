@@ -1,4 +1,4 @@
-package concurrency.geek;
+package concurrency.geek.demo1;
 
 /**
  * @version 1.0
