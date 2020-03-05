@@ -3,6 +3,7 @@ package concurrency.geek.demo7_semaphore;
 import com.google.common.collect.Lists;
 
 import java.util.List;
+import java.util.Vector;
 import java.util.concurrent.Semaphore;
 
 /**
@@ -13,7 +14,7 @@ import java.util.concurrent.Semaphore;
  */
 public class SemaphorePool {
 
-    private static List<Resource> pool = Lists.newArrayList();
+    private static List<Resource> pool = new Vector<>();
 
     private Semaphore semaphore;
 
