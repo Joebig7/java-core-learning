@@ -1,13 +1,8 @@
 package io.file;
 
-import com.google.common.collect.Lists;
-
 import java.io.File;
-import java.io.IOException;
 import java.util.Arrays;
-import java.util.List;
 import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 
 /**
  * @version 1.0
