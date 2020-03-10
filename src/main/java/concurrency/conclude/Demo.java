@@ -1,5 +1,9 @@
 package concurrency.conclude;
 
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.Map;
+
 /**
  * @version 1.0
  * @author: JoeBig7
@@ -9,23 +13,8 @@ package concurrency.conclude;
 public class Demo {
 
     public static void main(String[] args) {
-        Thread thread = new Thread(()->{
-            try {
-                Thread.sleep(10000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        });
-
-        thread.start();
-
-        try {
-            thread.join();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        System.out.println("xxxx");
+        Map<String, String> hashtable = new HashMap<>();
+        hashtable.put(null, "d");
     }
 
 }
