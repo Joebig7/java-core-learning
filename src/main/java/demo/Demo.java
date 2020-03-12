@@ -39,8 +39,14 @@ public class Demo {
     public static void main(String[] args) {
 
 //        test1();
-        test2();
+//        test2();
+        Integer i1 = 400;
+        Integer i2 = 400;
 
+        int i3 = 400;
+        int i4 = 400;
+
+        System.out.println(i3 == i4);
 
     }
 
