@@ -3,6 +3,7 @@ package concurrency.conclude;
 import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.Map;
+import java.util.Random;
 
 /**
  * @version 1.0
@@ -13,8 +14,20 @@ import java.util.Map;
 public class Demo {
 
     public static void main(String[] args) {
-        Map<String, String> hashtable = new HashMap<>();
-        hashtable.put(null, "d");
+        ThreadLocal<Integer> threadLocal = new ThreadLocal<>();
+
+        for (int i = 0; i < 10000000; i++) {
+            try {
+                threadLocal.set(new Random().nextInt(100));
+                new Demo().finalize();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+            }
+        }
+
+        System.out.println(threadLocal.get());
+
     }
+
 
 }
