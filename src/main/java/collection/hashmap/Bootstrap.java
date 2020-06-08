@@ -1,6 +1,7 @@
 package collection.hashmap;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
@@ -21,6 +22,11 @@ public class Bootstrap {
         System.out.println(a.hashCode());
         System.out.println(b.hashCode());
 
+        LinkedHashMap<String,String> linkedHashMap = new LinkedHashMap<>();
+        linkedHashMap.put("a","b");
+        linkedHashMap.put("c","c");
+        linkedHashMap.put("b","b");
+        System.out.println(linkedHashMap.toString());
     }
 
 
